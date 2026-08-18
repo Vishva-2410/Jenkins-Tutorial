@@ -12,7 +12,7 @@ node {
 
     stage('Test') {
         echo 'Running tests...'
-        sh 'echo "Tests passed successfully "'
+        sh 'echo "Tests passed successfully"'
     }
 
     stage('Deploy') {
