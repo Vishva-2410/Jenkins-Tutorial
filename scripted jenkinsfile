@@ -1,0 +1,26 @@
+node {
+
+    stage('Checkout') {
+        echo 'Checking out source code...'
+        checkout scm
+    }
+
+    stage('Build') {
+        echo 'Building the application...'
+        sh 'echo "Build completed successfully"'
+    }
+
+    stage('Test') {
+        echo 'Running tests...'
+        sh 'echo "Tests passed successfully "'
+    }
+
+    stage('Deploy') {
+        echo 'Deploying application...'
+        sh 'echo "Deployment completed successfully"'
+    }
+
+    stage('Success') {
+        echo 'Jenkins Pipeline completed successfully!'
+    }
+}
